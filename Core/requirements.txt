@@ -1,0 +1,3 @@
+argparse
+# Streamlit for interactive reporting
+streamlit>=1.34.0

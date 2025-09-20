@@ -1,0 +1,26 @@
+{
+  "baseUrl": "https://httpbin.org",
+  "stages": [
+    {
+      "duration": "10s",
+      "target": 100
+    },
+    {
+      "duration": "50s",
+      "target": 100
+    }
+  ],
+  "thresholds": {
+    "http_req_duration": [
+      "p(95)<800"
+    ],
+    "checks": [
+      "rate>0.98"
+    ]
+  },
+  "tags": {
+    "env": "demo",
+    "service": "httpbin"
+  },
+  "sleep": 0.2
+}
